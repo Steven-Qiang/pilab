@@ -1,29 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 #app {
-  position: relative;
-  min-width: 1200px;
-  height: 100%;
-  padding-top: 70px;
-  padding-bottom: 30px
+  min-height: 100vh;
+  background: #f5f7fa;
+  transition: background 0.3s ease;
 }
 
-.page-header {
-  min-height: 420px;
-}
-
-.page-header .center-block {
-  margin-top: 40px
-}
-
-.page-header table {
-  table-layout: fixed
-}
-
-.container .row:not(:last-child) {
-  text-align: center;
-}
-
-td {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden
+.dark #app {
+  background: #1a1d23;
 }
